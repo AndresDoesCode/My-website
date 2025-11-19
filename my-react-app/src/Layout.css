@@ -1,0 +1,41 @@
+#Layout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top{
+    background-color: rgb(100, 100, 255);
+    padding: 0.25em;
+    flex: .2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.left{
+    background-color: rgb(100, 255, 255);
+    padding: 0.25em;
+    width: 15%;
+}
+
+.center{
+    background-color: rgb(255, 255, 100);
+    padding: 0.25em;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right{
+    background-color: rgb(255, 100, 100);
+    padding: 0.25em;
+    width: 15%;
+}
