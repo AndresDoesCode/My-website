@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: radial-gradient(ellipse 85% 25% at top, rgb(189, 189, 189), black);
+}
+
+.title{
+    text-align: center;
+    color: color-mix(in srgb, color percentage, color percentage);
+    height: 25%;
+}
+
+.gradient-text {
+  /* background-image: linear-gradient(to right, indigo, black); */
+  background-image: radial-gradient(circle, indigo, black);
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text;
+  color: transparent;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;;
+}
