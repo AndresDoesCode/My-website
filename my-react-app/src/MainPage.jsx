@@ -6,9 +6,19 @@ function MainPage(){
     return(
         <>
         <div className="container">
-            {/* <Layout top={<p>Test</p>} center={<p>Test</p>} right={<p>Test</p>}/> */}
             <div className="title">
                 <h1 className="gradient-text">Crypto Currency Price Tracker</h1>
+            </div>
+            <div className="main-page-bottom">
+                <div className="capsule">
+                    <p>Test</p>
+                </div>
+                <div className="capsule">
+                    <p>Test</p>
+                </div>
+                <div className="capsule">
+                    <p>Test</p>
+                </div>
             </div>
         </div>
         </>
