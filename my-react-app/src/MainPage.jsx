@@ -11,13 +11,13 @@ function MainPage(){
             </div>
             <div className="main-page-bottom">
                 <div className="capsule">
-                    <p>Test</p>
+                    <h2 style={{textAlign: "center"}}>Coin Search</h2>
                 </div>
                 <div className="capsule">
                     <p>Test</p>
                 </div>
                 <div className="capsule">
-                    <p>Test</p>
+                    <h2 style={{textAlign: "center"}}>About Us</h2>
                 </div>
             </div>
         </div>
