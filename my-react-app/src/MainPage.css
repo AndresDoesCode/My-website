@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: radial-gradient(ellipse 85% 25% at top, rgb(189, 189, 189), rgba(0, 0, 0, 0.9));
+    flex:1;
+    background-image: radial-gradient(ellipse 85% 11.5rem at top, rgb(189, 189, 189), rgba(0, 0, 0, 0.9));
 }
 
 .title{
     text-align: center;
-    height: 25%;
+    height: 11.5rem;
 }
 
 .gradient-text {
@@ -30,18 +31,23 @@
   height: 100%;
 }
 
-.main-page-bottom div{
+.capsule{
   width: 30%;
   float: left;
   margin-left: .5em;
   margin-right: .5em;
-}
-
-.capsule{
   background: rgba(255, 255, 255, 0.175); /* clean base */
   border-radius: 2rem; /* capsule shape */
   padding: 1.5rem;
   margin: 0.5rem;
   box-shadow: 0 4px 12px indigo; /* soft black shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 10rem;
 }
