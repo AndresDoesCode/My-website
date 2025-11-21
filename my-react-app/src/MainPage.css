@@ -42,6 +42,7 @@
   margin: 0.5rem;
   box-shadow: 0 4px 12px indigo; /* soft black shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: rgb(255, 255, 255);
 }
 
 .img{
