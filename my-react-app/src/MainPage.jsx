@@ -3,6 +3,7 @@ import "./MainPage.css";
 import magnifyingGlass from './assets/Magnifying-Glass.png';
 import Crypto from './assets/bitcoin-symbol-overlaid-on-colorful-financial-graphs-and-candlestick-charts.webp';
 import UIC_Logo from './assets/uic-logo.png';
+import { Link } from "react-router-dom";
 
 
 function MainPage(){
@@ -39,6 +40,7 @@ function MainPage(){
                         <img src={UIC_Logo} width={"auto"} height={"100%"}/>
                     </div>
                     <p>For what purpose did I create this website. Click here to learn about the mission, the creater, and interesting tadbits about my journey with my first big website.</p>
+                    <Link className="clickMe" to="/AboutUs"><p>Click Me</p></Link>
                 </div>
             </div>
         </div>
