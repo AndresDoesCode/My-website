@@ -24,6 +24,9 @@ function MainPage(){
                         <li>
                             Add more info when possible
                         </li>
+                        <li>
+                            <Link className="clickMe" to="/how-to-use"><p>Click Me</p></Link>
+                        </li>
                     </ul>
                     
                 </div>

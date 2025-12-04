@@ -5,21 +5,30 @@ import "./Layout.css";
 function Layout({top = null, left=null, right=null}){
     let currentLocation = useLocation();
 
+    function showLeft(){
+        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs"){
+            return false;
+        }
+        return true;
+    }
 
-
-    let LeftContainer = left ? "left" : "";
-    let RightContainer = right ? "right" : "";
+    function showRight(){
+        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs"){
+            return false;
+        }
+        return true;
+    }
 
     return (
         <>
             <div id="Layout">
                 <div className={currentLocation.pathname == "/" ? "hide" : "top"}>{top}</div>
                 <div className="bottom">
-                    <div className={LeftContainer}>{left}</div>
+                    <div className={showLeft() ? "left" : "hide"}>{left}</div>
                     <div className="center">
                         <Outlet/>
                     </div>
-                    <div className={RightContainer}>{right}</div>
+                    <div className={showRight() ? "right" : "hide"}>{right}</div>
                 </div>
                 
             </div>
