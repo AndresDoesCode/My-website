@@ -16,3 +16,42 @@
     font-weight: bold;
     font-family: 'Courier New', monospace;
 }
+
+.bothContainers{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSideContainer{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
+.rightSideContainer{
+    width: 50%;
+    color: white;
+}
+
+.img2 {
+    width: 100%;          /* scales by width */
+    height:auto;        /* keeps aspect ratio */
+    max-height: 63vh;    /* stops shrinking once it hits 90% of the viewport height */
+    object-fit: contain; /* ensures the image fits without cropping */
+}
+
+.capsule2{
+    background: rgba(255, 255, 255, 0.175); /* clean base */
+    border-radius: 2rem; /* capsule shape */
+    padding: 1.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 4px 12px indigo; /* soft black shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: rgb(255, 255, 255);
+}
+
+.indented {
+  text-indent: 2em; /* or 20px, 3ch, etc */
+}
