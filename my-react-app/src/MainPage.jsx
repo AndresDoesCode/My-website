@@ -36,6 +36,7 @@ function MainPage(){
                         <img src={Crypto} width={"auto"} height={"100%"}/>
                     </div>
                     <p>In here, you will find a comprehensive catalog of all coin. Click on them to learn more about their current and historically price evaluations</p>
+                    <Link className="clickMe" to="/crypto-tracking"><p>Click Me</p></Link>
                 </div>
                 <div className="capsule">
                     <h2 style={{textAlign: "center"}}>About Us</h2>
