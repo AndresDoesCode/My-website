@@ -8,14 +8,14 @@ function Layout({top = null, left=null, right=null}){
     let currentLocation = useLocation();
 
     function showLeft(){
-        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs"){
+        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs" || currentLocation.pathname == "/crypto-tracking"){
             return false;
         }
         return true;
     }
 
     function showRight(){
-        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs"){
+        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs" || currentLocation.pathname == "/crypto-tracking"){
             return false;
         }
         return true;
