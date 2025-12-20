@@ -10,6 +10,11 @@
   );
 }
 
+.CryptoTrackingFont{
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+}
 
 .crypto-bottom {
   flex: 1;                 /* ← NOT height:100% */
@@ -19,9 +24,26 @@
   align-items: flex-start;
 }
 
+.search{
+  height:3.7em;
+}
+
+.searchTitle{
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+
+.searchTitle h1 {
+  margin: 0;
+}
+
+.searchBar{
+  width:98.5%;
+}
 
 .capsule3 {
-  overflow-y: auto;
+  padding: 1em;
   width: 80%;
   height: 30em;
   background: rgba(255, 255, 255, 0.175);
@@ -30,17 +52,19 @@
   color: white;
 }
 
-.test{
-  height:8em;
-  width:80%;
-  background-color: aquamarine;
-  border-color: black;
-  border-width: 0.3em;
-  border-style: solid;
+.boxList{
+  height:25.8em;
+  overflow-y: auto;
 }
 
-.CryptoTrackingFont{
-    font-size: 3.5em;
-    font-weight: bold;
-    font-family: 'Courier New', monospace;
+.box{
+  margin: 0.25em;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  background-image: radial-gradient(
+    ellipse 100% 60% at 50%,
+    rgb(100, 100, 100),
+    rgba(0, 0, 0, 0.9)
+  );
 }
