@@ -4,22 +4,8 @@ import "./Layout.css";
 import { FaHome, FaBitcoin, FaUsers}from "react-icons/fa";
 import { FiBookOpen } from "react-icons/fi";
 
-function Layout({top = null, left=null, right=null}){
+function Layout(){
     let currentLocation = useLocation();
-
-    function showLeft(){
-        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs" || currentLocation.pathname == "/crypto-tracking"){
-            return false;
-        }
-        return true;
-    }
-
-    function showRight(){
-        if(currentLocation.pathname == "/" || currentLocation.pathname == "/AboutUs" || currentLocation.pathname == "/crypto-tracking"){
-            return false;
-        }
-        return true;
-    }
 
     return (
         <>
@@ -41,11 +27,9 @@ function Layout({top = null, left=null, right=null}){
                     </div>
                 </div>
                 <div className="bottom">
-                    <div className={showLeft() ? "left" : "hide"}>{left}</div>
                     <div className="center">
                         <Outlet/>
                     </div>
-                    <div className={showRight() ? "right" : "hide"}>{right}</div>
                 </div>
                 
             </div>

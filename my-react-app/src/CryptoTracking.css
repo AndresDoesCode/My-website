@@ -68,3 +68,8 @@
     rgba(0, 0, 0, 0.9)
   );
 }
+
+.box a{
+  color: white;
+  text-decoration: none;
+}
