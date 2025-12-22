@@ -23,11 +23,39 @@ function CoinDetail(){
     if (!coin) return <h1 className='test'>Loading...</h1>;
 
     return (
-        <div className="test">
-            <h1>{coin.name}</h1>
-            <p>Symbol: {coin.symbol}</p>
-            <p>Rank: {coin.market_cap_rank}</p>
-            {/* Add more coin details here */}
+        <div className="coinDetailContainer">
+            <div className="coinDetailLeft">
+                <div className="coinDetailTop">
+                    <img className="coinImage" src={coin.image.large} alt={coin.name}/>
+                    <div>
+                        <span className="coinName">{coin.name}</span>
+                        <span className="coinSymbol">
+                            ({coin.symbol.toUpperCase()})
+                        </span>
+                    </div>
+                </div>
+                <div className="coinDetailBottom">
+                    <div className="quad">
+                        <p>e</p>
+                    </div>
+                    <div className="quad">
+                        <p>e</p>
+                    </div>
+                    <div className="quad">
+                        <p>e</p>
+                    </div>
+                    <div className="quad">
+                        <p>e</p>
+                        <p>e</p>
+                        <p>e</p>
+                        <p>e</p>
+                        <p>e</p>
+                    </div>
+                </div>
+            </div>
+            <div className="coinDetailRight">
+                <p>test</p>
+            </div>
         </div>
     );
 }

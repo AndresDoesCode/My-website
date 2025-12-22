@@ -1,3 +1,71 @@
-.test{
+
+
+.coinDetailContainer {
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(
+    ellipse 100% 60% at 50%,
+    rgb(100, 100, 100),
+    rgba(0, 0, 0, 0.9)
+    );
     color: white;
+}
+
+.coinDetailContainer * {
+  box-sizing: border-box;
+}
+
+.coinDetailLeft {
+    height: 100%;
+    width: 75%;
+    float: left;
+}
+
+.coinDetailTop{
+    display: flex;
+    align-items: center;
+    border: 3px solid rgba(0, 130, 37, 0.765);
+    height: fit-content;
+}
+
+.coinDetailBottom {
+    display: flex;
+    flex-wrap: wrap;       /* allow quads to wrap */
+    border: 3px dashed rgb(0, 102, 130);
+    padding: 0;            /* no padding so quads touch edges */
+}
+
+
+.coinDetailRight{
+    height: 100%;
+    border: 3px dotted rgb(124, 130, 0);
+    width:25%;
+    float:left;
+}
+
+
+/*The finer classes*/
+.coinImage{
+    width: 100px;
+    height: 100px;
+}
+
+.coinName {
+    font-weight: bold;
+    /*Measurements: clamp(min, preffered, max)*/
+    font-size: clamp(1.9rem, 5cqw, 3rem);
+}
+
+.coinSymbol{
+    font-size: clamp(0.95rem, 2.5cqw, 1.5rem);
+}
+
+
+.quad {
+    border: 3px dotted rgba(130, 0, 98, 0.765);
+    flex: 0 0 50%;         
+    height: 10em;          /* fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
