@@ -30,7 +30,7 @@
 
 .coinDetailBottom {
     display: flex;
-    flex-wrap: wrap;       /* allow quads to wrap */
+    flex-wrap: wrap;
     border: 3px dashed rgb(0, 102, 130);
     padding: 0;            /* no padding so quads touch edges */
 }
@@ -64,8 +64,5 @@
 .quad {
     border: 3px dotted rgba(130, 0, 98, 0.765);
     flex: 0 0 50%;         
-    height: 10em;          /* fixed height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 10em; 
 }
