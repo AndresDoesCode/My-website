@@ -24,15 +24,7 @@
 .coinDetailTop{
     display: flex;
     align-items: center;
-    border: 3px solid rgba(0, 130, 37, 0.765);
     height: fit-content;
-}
-
-.coinDetailBottom {
-    display: flex;
-    flex-wrap: wrap;
-    border: 3px dashed rgb(0, 102, 130);
-    padding: 0;            /* no padding so quads touch edges */
 }
 
 
@@ -60,9 +52,86 @@
     font-size: clamp(0.95rem, 2.5cqw, 1.5rem);
 }
 
+.quad-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
 
 .quad {
-    border: 3px dotted rgba(130, 0, 98, 0.765);
-    flex: 0 0 50%;         
-    height: 10em; 
+    background: rgba(255, 255, 255, 0.175); /* clean base */
+    border-radius: 2rem; /* capsule shape */
+    padding: 1rem;
+    box-shadow: 0 4px 12px indigo; /* soft black shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: rgb(255, 255, 255);
 }
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: clamp(2.5rem, 7cqw, 3.7rem);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    padding: 0.5em 1em;
+    border-radius: 0.5rem;
+
+    /* subtle glow for readability on dark backgrounds */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.price.up {
+  color: #22c55e;
+}
+
+.price.up::after {
+  content: " ▲";
+  font-size: 0.8em;
+}
+
+.price.down {
+  color: #ef4444;
+}
+
+.price.down::after {
+  content: " ▼";
+  font-size: 0.8em;
+}
+
+#quad-title {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: #9ca3af;
+}
+
+/* Main value */
+#quad-primary {
+    padding-left: 0.35rem;
+    margin: 0;
+    font-size: 1.85rem;   /* same as secondary */
+    font-weight: 650;     /* same as secondary */
+    color: #f9fafb;       /* bright, stands out */
+}
+
+/* Secondary value */
+#quad-secondary {
+    padding-left: 0.35rem;
+    margin: 0;
+    font-size: 1.85rem;   /* same as primary */
+    font-weight: 650;     /* same as primary */
+    color: #e5e7eb;       /* slightly muted, differentiates from primary */
+}
+
+/* Meta info (rank, max supply, notes) */
+#quad-meta {
+    margin-top: 0;
+    font-size: 1.05rem;
+    color: #9ca3af;
+}
+
