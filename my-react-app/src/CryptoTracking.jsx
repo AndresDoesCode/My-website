@@ -33,14 +33,12 @@ function CryptoTracking(){
           <div className="boxList">
             {coins.map((coin)=>
               coin.name.toLowerCase().includes(name.toLowerCase()) ? (
-                <>
-                  <div className="box">
+                  <div className="box" key={coin.id}>
                     <Link to={`/crypto-tracking/${coin.id}`}>
                       <img src={coin.image} alt={coin.name} width="20" />
                       {coin.name} – ${coin.current_price}
                     </Link>
                   </div>
-                </>
               ) : null
             )}
           </div>
