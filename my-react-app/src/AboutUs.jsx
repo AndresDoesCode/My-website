@@ -7,7 +7,7 @@ function AboutUs(){
         <>
         <div className="container2">
             <div className="title2">
-                <h1 className="AboutUsFont">About Me</h1>
+                <h1 className="TitleFont">About Me</h1>
             </div>
             <div className="bothContainers">
                 <div className="leftSideContainer">

@@ -1,0 +1,11 @@
+.HTWContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howto-img {
+    width: 35em;
+    height: auto;
+    margin: 10px 0;
+}
