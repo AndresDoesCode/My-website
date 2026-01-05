@@ -36,10 +36,8 @@
 }
 
 .img2 {
-    width: 100%;          /* scales by width */
+    width: 21em;          /* scales by width */
     height:auto;        /* keeps aspect ratio */
-    max-height: 63vh;    /* stops shrinking once it hits 90% of the viewport height */
-    object-fit: contain; /* ensures the image fits without cropping */
 }
 
 .capsule2{

@@ -81,6 +81,8 @@
 
     /* subtle glow for readability on dark backgrounds */
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 .price.up {
